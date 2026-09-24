@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ghitalabs.github.io/sitemap.xml
+Sitemap: https://ghitalabs.github.io/Ghita-labs/sitemap.xml

@@ -34,6 +34,6 @@ The site includes the boring but useful pieces that are easy to forget: a canoni
 
 `og-image.png` is the large preview used when the site is shared. `favicon.png` and `apple-touch-icon.png` handle browser tabs and saved shortcuts.
 
-The canonical URL currently points to `https://ghitalabs.github.io/`. If Ghita Labs moves to a custom domain later, the canonical, Open Graph URLs, sitemap and robots file should all be updated together rather than leaving the old GitHub Pages address behind.
+The canonical URL currently points to `https://ghitalabs.github.io/Ghita-labs/`. If Ghita Labs moves to a custom domain later, the canonical, Open Graph URLs, sitemap and robots file should all be updated together rather than leaving the old GitHub Pages address behind.
 
 After publishing, the only manual SEO setup worth doing at this stage is adding the site to Google Search Console and submitting `sitemap.xml`. I’m deliberately not turning this repository into a content machine before there is a product and a search problem worth writing for.
