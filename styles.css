@@ -47,3 +47,18 @@ footer{padding:3rem 1.5rem 5rem;border-top:1px solid var(--line);display:grid;gr
 }
 @media(max-width:520px){.team-grid{grid-template-columns:1fr}h1{font-size:3.8rem}.experiment-card{min-height:0}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+/* V2: visual team */
+.visual-team{grid-template-columns:repeat(3,1fr);gap:1.35rem}
+.visual-persona{padding:0;border:1px solid var(--line);background:rgba(255,255,255,.4);overflow:hidden;min-height:0}
+.visual-persona:hover,.visual-persona:focus{background:var(--soft);transform:translateY(-4px) rotate(-.2deg);box-shadow:0 18px 40px rgba(52,40,45,.07)}
+.visual-persona:nth-child(even):hover{transform:translateY(-4px) rotate(.2deg)}
+.visual-persona img{display:block;width:100%;aspect-ratio:1.094/1;object-fit:cover;border-bottom:1px solid var(--line)}
+.persona-caption{padding:1.25rem 1.35rem 1.45rem}
+.persona-caption h3{margin:1rem 0 .15rem}
+.sirius-note{margin-top:1.5rem;display:flex;gap:1rem;align-items:flex-start;max-width:760px;padding:1rem 1.2rem;border-left:2px solid var(--rose);background:rgba(243,233,236,.48);color:var(--muted)}
+.sirius-note p{margin:0}.sirius-note strong{color:var(--ink)}.sirius-mark{color:var(--plum);font-size:1.2rem;line-height:1.4}
+.topbar .brand img{height:58px;width:150px;object-fit:contain;filter:none}
+footer img{width:170px;height:auto;object-fit:contain}
+@media(max-width:900px){.visual-team{grid-template-columns:1fr}.visual-persona{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(220px,.85fr)}.visual-persona img{height:100%;aspect-ratio:auto;border-bottom:0;border-right:1px solid var(--line)}}
+@media(max-width:620px){.visual-persona{display:block}.visual-persona img{height:auto;aspect-ratio:1.094/1;border-right:0;border-bottom:1px solid var(--line)}.topbar .brand img{width:118px;height:54px}}
