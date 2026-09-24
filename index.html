@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ghita Labs — Independent product lab</title>
+  <meta name="description" content="Ghita Labs is an independent one-person product lab exploring small, recurring problems and building focused software when there is something genuinely worth fixing.">
+  <meta name="theme-color" content="#fbf8f7">
+  <meta property="og:title" content="Ghita Labs — Ideas into impact">
+  <meta property="og:description" content="Small experiments. Real problems. Useful things.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="ghita-labs-logo.png">
+  <link rel="icon" href="ghita-labs-logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <a class="brand" href="#lab" aria-label="Ghita Labs home">
+      <img src="ghita-labs-logo.png" alt="Ghita Labs">
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#lab" data-i18n="nav.lab">The Lab</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#team" data-i18n="nav.team">Meet the Lab</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="lang" aria-label="Language">
+      <button class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+      <span>/</span>
+      <button class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero lab-grid" id="lab">
+      <div class="eyebrow"><span class="pulse"></span><span data-i18n="hero.eyebrow">INDEPENDENT PRODUCT LAB · OTTAWA, CANADA</span></div>
+      <h1 data-i18n="hero.title">Small experiments.<br>Real problems.<br><em>Useful things.</em></h1>
+      <p class="lede" data-i18n="hero.body">Ghita Labs is an independent product lab. I look for small, recurring problems in the way people work, understand them properly, and build focused software when there’s something genuinely worth fixing.</p>
+      <a class="lab-button" href="#experiments"><span data-i18n="hero.cta">Enter the lab</span><span aria-hidden="true">↓</span></a>
+      <div class="specimen-note" aria-hidden="true">
+        <span>GL / 2026</span><span>OBSERVE → TEST → BUILD</span>
+      </div>
+    </section>
+
+    <section class="section" id="experiments">
+      <div class="section-head">
+        <div><span class="index">01</span><p class="kicker" data-i18n="experiments.kicker">EXPERIMENT LOG</p></div>
+        <p class="section-intro" data-i18n="experiments.intro">Not every experiment becomes a product. That’s the point.</p>
+      </div>
+
+      <div class="experiment-grid">
+        <article class="experiment-card muted" tabindex="0">
+          <div class="card-top"><span>EXP. 001</span><span class="status status-paused" data-i18n="exp1.status">PAUSED</span></div>
+          <h2>Startly</h2>
+          <p data-i18n="exp1.body">An exploration of initiation friction: the gap between knowing what needs to be done and actually starting. The concept exposed a measurement problem that made the original product thesis difficult to validate reliably.</p>
+          <button class="text-button reveal-btn" aria-expanded="false"><span data-i18n="common.notes">Lab notes</span> +</button>
+          <div class="reveal">
+            <p data-i18n="exp1.note">Status: postponed, not erased. The research remains useful, but the original direction is not being actively built.</p>
+          </div>
+        </article>
+
+        <article class="experiment-card active-exp" tabindex="0">
+          <div class="card-top"><span>EXP. 002</span><span class="status status-research"><span class="pulse"></span><span data-i18n="exp2.status">RESEARCH</span></span></div>
+          <h2>LedgerFold</h2>
+          <p data-i18n="exp2.body">Exploring a better way to understand and verify Shopify Payments activity, especially when the numbers in reports and the books don’t line up as cleanly as they should.</p>
+          <button class="text-button reveal-btn" aria-expanded="false"><span data-i18n="common.notes">Lab notes</span> +</button>
+          <div class="reveal">
+            <p data-i18n="exp2.note">Currently speaking with bookkeepers and business owners to understand reconciliation workflows, edge cases and what is actually worth automating.</p>
+            <a href="#contact" data-i18n="exp2.link">I work with Shopify Payments →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split" id="about">
+      <div class="section-label"><span class="index">02</span><p class="kicker" data-i18n="about.kicker">INSIDE THE LAB</p></div>
+      <div class="about-copy">
+        <h2 data-i18n="about.title">Hi, I’m Ghita.</h2>
+        <p data-i18n="about.p1">My work sits somewhere between business problems and technical systems, which means I spend a lot of time looking at the awkward space between “this should be simple” and “why are we still doing this manually?”</p>
+        <p data-i18n="about.p2">Ghita Labs is where I explore those problems independently and, when one proves worth solving, turn it into something useful.</p>
+
+        <div class="credentials">
+          <div><span>01</span><strong data-i18n="about.business">Business</strong><p data-i18n="about.businessText">Background in management and marketing.</p></div>
+          <div><span>02</span><strong data-i18n="about.systems">Systems</strong><p data-i18n="about.systemsText">Professional experience translating messy business needs into functional and technical solutions.</p></div>
+          <div><span>03</span><strong data-i18n="about.tech">Technology & data</strong><p data-i18n="about.techText">Hands-on experience with data, APIs, Python, cloud and software systems.</p></div>
+        </div>
+
+        <details class="equipment">
+          <summary data-i18n="about.equipment">Open the equipment drawer</summary>
+          <p>Python · SQL · APIs · Azure · Power BI · Postman · C# · Functional Analysis</p>
+        </details>
+        <p class="fineprint" data-i18n="about.independent">Ghita Labs is an independent personal project and is not affiliated with or endorsed by my employer.</p>
+      </div>
+    </section>
+
+    <section class="section" id="team">
+      <div class="section-head">
+        <div><span class="index">03</span><p class="kicker" data-i18n="team.kicker">MEET THE LAB</p></div>
+        <div><h2 data-i18n="team.title">Meet the team.<br>Yes, it’s all Ghita.</h2></div>
+      </div>
+
+      <div class="team-grid">
+        <article class="persona" tabindex="0"><span class="persona-id">A / 01</span><h3>Ghita</h3><em data-i18n="team.analyst">The Analyst</em><p data-i18n="team.analystText">Talks to people, pulls problems apart and asks an unreasonable number of “why?” questions.</p></article>
+        <article class="persona" tabindex="0"><span class="persona-id">B / 02</span><h3>Gigi</h3><em data-i18n="team.builder">The Builder</em><p data-i18n="team.builderText">Turns the useful parts into prototypes, automations and small pieces of software.</p></article>
+        <article class="persona" tabindex="0"><span class="persona-id">C / 03</span><h3>Ghitou</h3><em data-i18n="team.skeptic">The Skeptic</em><p data-i18n="team.skepticText">Usually the one asking whether anyone actually needs what the other two are trying to build.</p></article>
+        <article class="persona" tabindex="0"><span class="persona-id">D / 04</span><h3 data-i18n="team.ghitaAgain">Ghita, again</h3><em data-i18n="team.founder">The Founder</em><p data-i18n="team.founderText">Makes the final call and occasionally reminds everyone that Ghita Labs has exactly one person behind it.</p></article>
+      </div>
+      <p class="transparency" data-i18n="team.transparency">Ghita Labs is an independent one-person product lab founded by Ghita El Belghiti.</p>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-label"><span class="index">04</span><p class="kicker" data-i18n="contact.kicker">TALK TO THE LAB</p></div>
+      <div class="contact-copy">
+        <h2 data-i18n="contact.title">Got something weird that shouldn’t still be this difficult?</h2>
+        <p data-i18n="contact.body">If you work with Shopify Payments, have a recurring workflow that makes you think “there has to be a better way,” or simply want to say hello, I’d like to hear from you.</p>
+        <a class="lab-button" id="emailLink" href="mailto:ghitalabs@gmail.com?subject=Ghita%20Labs"><span data-i18n="contact.cta">Send a note</span><span aria-hidden="true">↗</span></a>
+        <p class="contact-note" data-i18n="contact.note">No mailing list. No sales sequence. Just a real inbox.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><img src="ghita-labs-logo.png" alt="" aria-hidden="true"></div>
+    <p>© <span id="year"></span> Ghita Labs</p>
+    <p data-i18n="footer.line">Independent product lab · Ideas into impact.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

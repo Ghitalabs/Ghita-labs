@@ -1,0 +1,49 @@
+:root{
+  --paper:#fbf8f7;--ink:#34282d;--muted:#7d6a72;--line:#d8c9ce;
+  --rose:#c78fa1;--plum:#775061;--soft:#f3e9ec;--green:#65786a;
+  --max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
+a{color:inherit}
+.skip-link{position:absolute;left:-9999px}.skip-link:focus{left:1rem;top:1rem;background:white;padding:.75rem;z-index:99}
+.topbar{position:sticky;top:0;z-index:20;display:grid;grid-template-columns:160px 1fr auto;align-items:center;gap:2rem;padding:14px max(24px,calc((100vw - var(--max))/2));border-bottom:1px solid rgba(119,80,97,.15);background:rgba(251,248,247,.88);backdrop-filter:blur(14px)}
+.brand img{display:block;width:138px;height:46px;object-fit:contain;object-position:left center}
+nav{display:flex;justify-content:center;gap:1.6rem}nav a{text-decoration:none;font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}nav a:hover{color:var(--plum)}
+.lang{display:flex;gap:.35rem;align-items:center;font-size:.76rem}.lang-btn{border:0;background:none;padding:.35rem;cursor:pointer;color:var(--muted)}.lang-btn.active{color:var(--plum);font-weight:700}
+.hero,.section,footer{max-width:var(--max);margin:auto}
+.hero{min-height:84vh;padding:9rem 1.5rem 4rem;position:relative}
+.lab-grid{background-image:linear-gradient(rgba(119,80,97,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(119,80,97,.05) 1px,transparent 1px);background-size:44px 44px}
+.eyebrow,.kicker,.card-top,.persona-id{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;font-size:.72rem}
+.eyebrow{display:flex;align-items:center;gap:.65rem;color:var(--plum)}
+.pulse{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--rose);box-shadow:0 0 0 5px rgba(199,143,161,.12)}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(3.6rem,8vw,7.7rem);line-height:.88;letter-spacing:-.055em;margin:2.2rem 0 2rem;max-width:960px;font-weight:400}
+h1 em{color:var(--plum);font-weight:400}
+.lede{font-size:clamp(1.05rem,2vw,1.35rem);max-width:690px;color:var(--muted)}
+.lab-button{display:inline-flex;align-items:center;justify-content:space-between;gap:2rem;margin-top:2rem;padding:1rem 1.2rem;border:1px solid var(--plum);text-decoration:none;min-width:210px;transition:.2s}.lab-button:hover{background:var(--plum);color:white;transform:translateY(-2px)}
+.specimen-note{position:absolute;right:1.5rem;bottom:2rem;display:flex;gap:2rem;writing-mode:vertical-rl;font:10px ui-monospace,monospace;letter-spacing:.15em;color:#a38f96}
+.section{padding:7rem 1.5rem;border-top:1px solid var(--line)}
+.section-head,.split{display:grid;grid-template-columns:1fr 2fr;gap:4rem}.section-head{margin-bottom:3rem}.index{font:italic 3.5rem Georgia,serif;color:#d8c3ca}.kicker{margin:.3rem 0;color:var(--plum)}.section-intro{font:2rem Georgia,serif;margin:0;max-width:550px}
+.experiment-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.experiment-card{border:1px solid var(--line);padding:2rem;min-height:330px;background:rgba(255,255,255,.36);transition:.25s;position:relative}.experiment-card:hover,.experiment-card:focus-within{transform:translateY(-4px);box-shadow:0 18px 40px rgba(52,40,45,.07)}.experiment-card.active-exp{border-color:var(--rose)}.experiment-card.muted{opacity:.78}
+.card-top{display:flex;justify-content:space-between;color:var(--muted)}.status{font-size:.68rem;padding:.25rem .45rem;border:1px solid var(--line)}.status-research{color:var(--plum);border-color:var(--rose)}.status-paused{color:#777}
+.experiment-card h2,.about-copy h2,.contact-copy h2,.section-head h2{font:400 clamp(2.4rem,5vw,4.6rem) Georgia,serif;line-height:1;margin:2rem 0 1rem}.experiment-card p{max-width:520px;color:var(--muted)}
+.text-button{border:0;background:none;padding:0;margin-top:1rem;color:var(--plum);text-decoration:underline;text-underline-offset:4px;cursor:pointer}.reveal{display:grid;grid-template-rows:0fr;overflow:hidden;transition:grid-template-rows .25s}.reveal>*{min-height:0}.experiment-card.open .reveal{grid-template-rows:1fr}.reveal a{display:inline-block;margin-top:.4rem;color:var(--plum)}
+.section-label{padding-top:.5rem}.about-copy>p{font-size:1.15rem;max-width:700px;color:var(--muted)}
+.credentials{margin-top:3rem;border-top:1px solid var(--line)}.credentials>div{display:grid;grid-template-columns:55px 180px 1fr;gap:1rem;padding:1.2rem 0;border-bottom:1px solid var(--line);align-items:start}.credentials span{font:11px ui-monospace,monospace;color:var(--rose)}.credentials p{margin:0;color:var(--muted)}
+.equipment{margin-top:2rem;border:1px dashed var(--rose);padding:1rem}.equipment summary{cursor:pointer;color:var(--plum)}.equipment p{font-family:ui-monospace,monospace;font-size:.82rem;color:var(--muted)}
+.fineprint{font-size:.78rem!important;margin-top:2rem}
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}.persona{padding:1.6rem;border-top:1px solid var(--plum);min-height:280px;transition:.2s}.persona:hover,.persona:focus{background:var(--soft);transform:rotate(-.4deg)}.persona:nth-child(even):hover{transform:rotate(.4deg)}.persona-id{color:var(--rose)}.persona h3{font:2.2rem Georgia,serif;margin:2rem 0 .2rem}.persona em{color:var(--plum)}.persona p{color:var(--muted);font-size:.92rem}.transparency{margin-top:2rem;font-size:.82rem;color:var(--muted)}
+.contact-section{display:grid;grid-template-columns:1fr 2fr;gap:4rem}.contact-copy h2{max-width:780px}.contact-copy>p{max-width:680px;color:var(--muted);font-size:1.1rem}.contact-note{font-size:.78rem!important;margin-top:1rem}
+footer{padding:3rem 1.5rem 5rem;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr auto auto;gap:2rem;align-items:end;color:var(--muted);font-size:.78rem}footer img{width:150px}
+@media(max-width:820px){
+ .topbar{grid-template-columns:1fr auto;padding:10px 18px}.brand img{width:112px}nav{display:none}
+ .hero{padding-top:6rem;min-height:78vh}.section{padding:5rem 1.2rem}
+ .section-head,.split,.contact-section{grid-template-columns:1fr;gap:1.4rem}
+ .experiment-grid{grid-template-columns:1fr}.team-grid{grid-template-columns:1fr 1fr}
+ .credentials>div{grid-template-columns:35px 1fr}.credentials p{grid-column:2}
+ footer{grid-template-columns:1fr;gap:.6rem}.specimen-note{display:none}
+}
+@media(max-width:520px){.team-grid{grid-template-columns:1fr}h1{font-size:3.8rem}.experiment-card{min-height:0}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
